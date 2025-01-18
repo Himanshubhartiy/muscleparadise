@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./home";
+import Home from "./Home"; // Ensure case sensitivity matches the file name
 // import Footer from "./Footer";
 function Header() {
   return (
