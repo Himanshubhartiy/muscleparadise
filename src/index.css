@@ -6,4 +6,33 @@
     width: 100%;
   }
   
+  .navbar-toggler-icon {
+    background-image: none; /* Remove the default icon */
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
   
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #fff; /* Change this to your desired color */
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-toggler-icon::before {
+    top: 6px;
+  }
+  
+  .navbar-toggler-icon::after {
+    bottom: 6px;
+  }
+  .navbar-toggler-icon:hover::before,
+  .navbar-toggler-icon:hover::after {
+    background-color: #f00; /* Change to a hover color */
+  }
+    
